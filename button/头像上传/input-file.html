@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>头像上传</title>
+</head>
+<style>
+    *{margin: 0;padding: 0;list-style: none;}
+    main{width: 300px;margin: 100px auto;}
+    .warpper{position: relative;z-index: 0;}
+    .circle,.bg,input{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .circle{
+        background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554963678987&di=9b42c6fb3969720b721f26c871f4ab65&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201706%2F22%2F20170622131955_h4eZS.thumb.700_0.jpeg') center center no-repeat;
+        background-size: cover;
+    }
+    .bg{
+        opacity: 0;
+        transition: 0.3s;
+    }
+    .bg>span{
+        height:26px;
+        position: absolute;
+        top: 50%;left: 50%;
+        transform: translate(-50%,-50%);
+        background: #1e1c1c4f;
+        line-height:26px; 
+        border-radius:5px; 
+    }
+    input{
+        opacity: 0;
+    }
+    .warpper:hover>.bg{background-color: #ffffff47;opacity: 1;}
+</style>
+<body>
+    <main>
+            <div class="warpper">
+                    <div class="circle"></div>
+                    <div class="bg"><span>上传</span></div>
+                    <input type="file">
+                </div>
+
+    </main>
+        
+</body>
+</html>

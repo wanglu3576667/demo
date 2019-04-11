@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>百度</title>
+</head>
+<script src="//at.alicdn.com/t/font_1135761_rwogmmm299.js"></script>
+<style>
+    *{margin:0px;padding:0px;list-style: none;box-sizing: border-box;}
+    main{margin: 100px auto;width: 700px;display: flex;align-items: center}
+    .icon {width: 1em; height: 1em;vertical-align: -0.15em;fill:#b6b6b6 ;overflow: hidden;width:22px;height:35px;}
+    .ipt{display: inline-block;position: relative;}
+    .camera{position: absolute;top:0;right:10px;background-color: transparent}
+    .camera:hover>.icon{fill:#2d78f4;}
+    .camera:focus>.icon{fill:#2d78f4;}
+    input[type=text]{display: inline-block; vertical-align: top; width:540px;height:38px;border:#b6b6b6 solid 1px;
+    font-size: 17px;}
+    input[type=text]:hover{border: 1px solid #2d78f4;}
+    input[type=text]:focus{border: 1px solid #2d78f4;}
+    input,button{border:none;outline: none;}
+    button[type=submit]{height:38px;width:100px;background: #3385ff;color: white;font-size: 15px;}
+    button[type=submit]:hover{box-shadow: 1px 1px 1px #ccc}
+    button[type=submit]:focus{box-shadow: 1px 1px 1px #ccc}
+</style>
+<body>
+    <main>
+        <div class="ipt">
+            <input type="text">
+            <button class="camera">
+                <svg class="icon" aria-hidden="true">
+                     <use xlink:href="#icon-xiangji"></use>
+                </svg>
+            </button>
+        </div>
+        <button type="submit">百度一下</button>
+    </main>
+</body>
+</html>
